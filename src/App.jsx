@@ -3,6 +3,7 @@ import AllProjects from "./pages/AllProjects"
 import HomePage from "./pages/HomePage"
 import Contact from "./pages/Contact"
 import { Routes, Route } from "react-router-dom"
+import "./App.css";
 
 
 const App = () => {

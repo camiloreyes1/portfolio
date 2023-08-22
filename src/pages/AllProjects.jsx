@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import Button from 'react-bootstrap/Button';
 
 const AllProjects = () => {
 
@@ -36,7 +36,7 @@ const AllProjects = () => {
           less than three times. This project was done using JavaScript, DOM maniputalion, HTML5, and CSS
         </p>
 
-
+      <Button>Hi</Button>
         </div>
         
         
