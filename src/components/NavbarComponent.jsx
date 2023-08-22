@@ -7,8 +7,6 @@ import Navbar from 'react-bootstrap/Navbar';
 const NavbarComponent = () => {
 
     return (
-        <div>
-      
 
       <Navbar collapseOnSelect expand="lg" data-bs-theme="dark">
         <Container>
@@ -20,8 +18,6 @@ const NavbarComponent = () => {
           </Nav>
         </Container>
       </Navbar>
-
-        </div>
 
 
     )
