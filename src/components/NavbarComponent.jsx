@@ -2,8 +2,13 @@ import React from 'react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../context/auth.context'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Navbar = () => {
+
+const NavbarComponent = () => {
 
     return (
         <div>
@@ -17,18 +22,18 @@ const Navbar = () => {
                     <button>Projects</button>
                 </Link>
 
-                <Link to="/info">
-                    <button>Info</button>
-                </Link>
-
                 <Link to="/contact">
                     <button>Contact</button>
                 </Link>
 
 
             </nav>
+
+            
+
+
         </div>
     )
 }
 
-export default Navbar
+export default NavbarComponent

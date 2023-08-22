@@ -1,3 +1,5 @@
+import Container  from "react-bootstrap/Container"
+import NavbarComponent from "../components/NavbarComponent"
 
 const HomePage = () => {
   return (
@@ -10,7 +12,11 @@ const HomePage = () => {
       
       </p>
 
-
+      <div class="card">
+    
+  
+  
+</div>             
     </div>
   )
 }
