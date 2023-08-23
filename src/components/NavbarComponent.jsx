@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
-const NavbarComponent = () => {
+function NavbarComponent() {
+
 
     return (
-
-      <Navbar collapseOnSelect expand="lg" data-bs-theme="dark">
+    <>
+      <Navbar className="NB1" bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/">JCReyes</Navbar.Brand>
           <Nav className="me-auto">
@@ -18,9 +19,12 @@ const NavbarComponent = () => {
           </Nav>
         </Container>
       </Navbar>
+   
+    </>
 
-
-    )
+    );
 }
+
+
 
 export default NavbarComponent

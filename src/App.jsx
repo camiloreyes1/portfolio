@@ -8,10 +8,13 @@ import "./App.css";
 
 const App = () => {
   return (
+
     
     <div className="App">
 
+
       <NavbarComponent/>
+      
       
       <Routes>
         <Route path="/" element={ <HomePage/>} />
