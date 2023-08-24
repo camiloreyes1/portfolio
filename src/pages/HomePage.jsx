@@ -1,10 +1,10 @@
 import Container  from "react-bootstrap/Container"
 import NavbarComponent from "../components/NavbarComponent"
-import { Button } from "react-bootstrap"
 
 const HomePage = () => {
   return (
-    <div>
+
+    <div className="container m-3 flex px-10 py-20 md:flex-row flex-col items-center">
 
       
       <h1>Welcome,</h1>
@@ -12,12 +12,14 @@ const HomePage = () => {
 
       <br/><br/>
       In this portfolio, you'll find examples of my coding prowess, problem-solving abilities, and a commitment to clean, <br/> efficient, and scalable code. Whether you're an employer seeking a capable developer or a fellow enthusiast of the <br/> tech world, I invite you to explore my projects and get to know my capabilities.
-      
+  
       </p>
-  
-  
 
+    <div className="">
+      
+   </div>
     </div>
+
   )
 }
 

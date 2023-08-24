@@ -10,10 +10,11 @@ const App = () => {
   return (
 
     
-    <div className="App">
+    <div class=" lh-base bg-dark text-white" >
 
 
       <NavbarComponent/>
+
       
       
       <Routes>

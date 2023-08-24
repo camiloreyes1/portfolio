@@ -8,10 +8,10 @@ function NavbarComponent() {
 
 
     return (
-    <>
-      <Navbar className="NB1" bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="/">JCReyes</Navbar.Brand>
+    <div >
+      <Navbar className="NB1" bg="dark-subtle" data-bs-theme="dark">
+        <Container fluid>
+          <Navbar.Brand  className="m-2" href="/">JCReyes</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/all-projects">Projects</Nav.Link>
@@ -20,7 +20,7 @@ function NavbarComponent() {
         </Container>
       </Navbar>
    
-    </>
+    </div>
 
     );
 }
