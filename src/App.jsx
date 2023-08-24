@@ -10,7 +10,7 @@ const App = () => {
   return (
 
     
-    <div class=" lh-base bg-dark text-white" >
+    <div className=" lh-base bg-dark text-white"  >
 
 
       <NavbarComponent/>

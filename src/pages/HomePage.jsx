@@ -4,7 +4,7 @@ import NavbarComponent from "../components/NavbarComponent"
 const HomePage = () => {
   return (
 
-    <div className="container m-3 flex px-10 py-20 md:flex-row flex-col items-center">
+    <div className="container m-5 flex px-10 py-20 md:flex-row flex-col items-center">
 
       
       <h1>Welcome,</h1>

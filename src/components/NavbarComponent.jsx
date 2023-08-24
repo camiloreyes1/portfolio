@@ -11,7 +11,7 @@ function NavbarComponent() {
     <div >
       <Navbar className="NB1" bg="dark-subtle" data-bs-theme="dark">
         <Container fluid>
-          <Navbar.Brand  className="m-2" href="/">JCReyes</Navbar.Brand>
+          <Navbar.Brand  className="fw-bold m-2" href="/">JCReyes</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/all-projects">Projects</Nav.Link>
