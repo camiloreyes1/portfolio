@@ -17,6 +17,9 @@ function NavbarComponent() {
             <Nav.Link href="/all-projects">Projects</Nav.Link>
             <Nav.Link href="/contact">Contact Me</Nav.Link>
           </Nav>
+          <Nav >
+            
+          </Nav>
         </Container>
       </Navbar>
    
