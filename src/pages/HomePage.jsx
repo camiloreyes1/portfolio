@@ -24,7 +24,7 @@ const HomePage = () => {
 
       <h2>Skills</h2>
 
-      <div className="m-1 flex ">
+      <div className="m-1 fluid ">
 
         <Button class="btn btn-outline-info">
 

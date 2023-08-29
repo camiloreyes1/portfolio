@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
-import { Carousel } from "react-bootstrap"
 import { Card } from "react-bootstrap"
+import img1 from '../images/Pixels.png';
+import img2 from '../images/MRKT.png';
+import img3 from '../images/chicken-run.png'
+import Carousel from 'react-bootstrap/Carousel';
+
+
 
 const AllProjects = () => {
 
@@ -39,17 +44,34 @@ const AllProjects = () => {
           less than three times. This project was done using JavaScript, DOM maniputalion, HTML5, and CSS
         </p>
 
-        <Card className="bg-dark text-white">
-      <Card.Img src="../Pixels.png" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </Card>
+        <Carousel fade data-bs-theme="dark">
+      <Carousel.Item interval={2500}>
+        <img class="img-fluid" src={img1} text="First slide" />
+        <Carousel.Caption>
+          <h3>Pixels</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={2500}>
+      <img  class="img-fluid" src={img2} text="First slide" />        
+      <Carousel.Caption>
+          <h3>MRKT</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img class="img-fluid" src={img3} text="First slide" />        
+      <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+
+      
+
 
         </div>
 
