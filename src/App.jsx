@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage"
 import Contact from "./pages/Contact"
 import { Routes, Route } from "react-router-dom"
 import "./App.css";
+import FooterComponent from "./components/FooterComponent"
+import { Skills } from "./pages/Skills"
 
 
 const App = () => {
@@ -16,11 +18,14 @@ const App = () => {
       <NavbarComponent/>
 
       <Routes>
+        <Route path="/skills" element={<Skills/>} />
         <Route path="/" element={ <HomePage/>} />
         <Route path="/all-projects" element={<AllProjects/>} /> 
         <Route path="/contact" element={<Contact/>} />
         
       </Routes>
+
+      <FooterComponent/>
 
     </div>
   )

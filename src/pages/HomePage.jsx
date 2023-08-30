@@ -1,14 +1,33 @@
 import Container from "react-bootstrap/Container"
 import NavbarComponent from "../components/NavbarComponent"
 import { Button } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 
 const HomePage = () => {
+  const skillsData = [
+    { name: 'HTML', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/9_vyfdgx.png' },
+    { name: 'CSS', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/10_osb5by.png' },
+    { name: 'JavaScript', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/11_d3kszu.png' },
+    { name: 'React.js', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/12_eemg54.png' },
+    { name: 'Vite.js', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511234/PORTFOLIO/13_kqy64w.png' },
+    { name: 'Express.js', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/14_bs8hu1.png' },
+    { name: 'Node.js', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511234/PORTFOLIO/15_hspdjq.png' },
+    { name: 'Postman APIs', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/16_zdcjjn.png' },
+    { name: 'MongoDB', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/17_l25jfv.png' },
+    { name: 'Mongoose', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/18_exfnn3.png' },
+    { name: 'GitHub & Git', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/19_fyhlhi.png' },
+    { name: 'Bootstrap', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511658/PORTFOLIO/Portfolio_3_x2rmgz.png' },
+    { name: 'Visual Studio', imageSrc: 'https://res.cloudinary.com/dhqplbne3/image/upload/v1692511235/PORTFOLIO/21_eh6efr.png' },
+
+];
+
+  
   return (
 
     
-    <div className="container m-5 flex px-10 py-20 md:flex-row flex-col items-center"> 
+    <div > 
 
-      <div > 
+      <div className="container m-4 flex px-10 py-20 md:flex-row flex-col items-center flex-wrap"> 
 
         <h1>Welcome</h1>
 
@@ -23,10 +42,23 @@ const HomePage = () => {
 
       <br></br>
 
+
       <h2>Skills</h2>
+      <div className="d-flex m-4 flex-wrap justify-content-start">
+      <div className="skills">
+        <div className="techSkills">
+          {skillsData.map((skill, index) => (
+            <div key={index} className='skillCard'>
+              <img src={skill.imageSrc} alt={`${skill.name} Logo`} className='skillImg' />
+              <h3 className='skillName'>{skill.name}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
 
-      <div className="m-1 fluid ">
 
+
+{/* 
         <Button variant="outline-info">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
@@ -34,8 +66,8 @@ const HomePage = () => {
           </svg> <h5>JavaScript</h5>
 
         </Button>
-
-        &nbsp;&nbsp;&nbsp;
+        
+        <br></br>
 
         <Button variant="outline-info">
 
@@ -46,8 +78,6 @@ const HomePage = () => {
 
         </Button>
 
-        &nbsp;&nbsp;&nbsp;
-
         <Button variant="outline-info">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-json" viewBox="0 0 16 16">
@@ -56,8 +86,7 @@ const HomePage = () => {
 
         </Button>
 
-
-        &nbsp;&nbsp;&nbsp;
+        <br></br>
 
         <Button variant="outline-info">
 
@@ -67,8 +96,6 @@ const HomePage = () => {
 
         </Button>
 
-        &nbsp;&nbsp;&nbsp;
-
         <Button variant="outline-info">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
@@ -76,7 +103,6 @@ const HomePage = () => {
           </svg> <h5>HTML</h5>
 
         </Button>
-        &nbsp;&nbsp;&nbsp;
 
         <Button variant="outline-info">
 
@@ -85,10 +111,6 @@ const HomePage = () => {
           </svg> <h5>CSS</h5>
 
         </Button>
-
-        <br></br>
-        <br></br>
-
 
         <Button variant="outline-info">
 
@@ -99,7 +121,6 @@ const HomePage = () => {
 
         </Button>
 
-        &nbsp;&nbsp;&nbsp;
 
         <Button variant="outline-info">
 
@@ -109,8 +130,6 @@ const HomePage = () => {
 
         </Button>
 
-        &nbsp;&nbsp;&nbsp;
-
         <Button variant="outline-info">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
@@ -118,22 +137,10 @@ const HomePage = () => {
           </svg> <h5>Cloudinary</h5>
 
         </Button>
-
-
-
-
-
-
-
-
+ */}
 
 
       </div>
-
-
-
-
-
     </div>
 
   )
