@@ -12,8 +12,7 @@ const AllProjects = () => {
 
   return (
 
-    <div class="d-flex justify-content-around m-5 flex-wrap">
-      
+<div class="d-flex flex-wrap m-4 justify-content-around">      
 
         <Card style={{ width: '29rem' }} data-bs-theme="dark">
           <Card.Img variant="top" src={img1} />
@@ -42,8 +41,7 @@ const AllProjects = () => {
           </Card.Body>
         </Card>
 
-        &nbsp;&nbsp;&nbsp;
-      <br></br>
+    
 
       <Card style={{ width: '32rem' }} data-bs-theme="dark" >
         <Card.Img variant="top" src={img2} />
@@ -70,10 +68,6 @@ const AllProjects = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-
-      &nbsp;&nbsp;&nbsp;
-
-      <br></br>
 
       <Card style={{ width: '38rem' }} data-bs-theme="dark">
         <Card.Img variant="top" src={img3} />
