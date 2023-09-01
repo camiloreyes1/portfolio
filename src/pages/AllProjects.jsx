@@ -41,7 +41,9 @@ const AllProjects = () => {
           </Card.Body>
         </Card>
 
-    
+        <br></br>
+              <br></br>
+
 
       <Card style={{ width: '32rem' }} data-bs-theme="dark" >
         <Card.Img variant="top" src={img2} />
@@ -68,6 +70,9 @@ const AllProjects = () => {
           </Card.Text>
         </Card.Body>
       </Card>
+
+      <br></br>
+              <br></br>
 
       <Card style={{ width: '38rem' }} data-bs-theme="dark">
         <Card.Img variant="top" src={img3} />
