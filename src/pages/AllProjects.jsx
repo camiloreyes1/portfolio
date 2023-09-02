@@ -12,7 +12,7 @@ const AllProjects = () => {
 
   return (
 
-<div class="d-flex flex-wrap m-4 justify-content-around">      
+<div class="d-flex flex-wrap m-4 justify-content-around ">      
 
         <Card style={{ width: '29rem' }} data-bs-theme="dark">
           <Card.Img variant="top" src={img1} />
