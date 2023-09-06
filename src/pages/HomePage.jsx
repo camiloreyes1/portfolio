@@ -31,19 +31,19 @@ const HomePage = () => {
 
         <p>My name is Juan Reyes, as a Full Stack Developer, I've had the privilege of working on a diverse range of projects, from creating interactive web applications to building robust backend systems. My dedication to mastering both frontend and backend technologies enables me to bring comprehensive solutions to life.
 
-          <br /><br />
+        <br /><br />
           In this portfolio, you'll find examples of my coding problem-solving abilities, and a commitment to clean, efficient, and scalable code. Whether you're an employer seeking a capable developer or a fellow enthusiast of the tech world, I invite you to explore my projects and get to know my capabilities.
-
         </p>
 
       </div>
 
-      <br></br>
+      <br /><br />
+      <br /><br />
 
-      <div>
+
+          <h1 className="text-center">My Skills</h1>
       <div className="skills">
         <div className="techSkills">
-        
           {skillsData.map((skill, index) => (
             <div key={index} className='skillCard'>
               <img src={skill.imageSrc} alt={`${skill.name} Logo`} className='skillImg' />
@@ -52,7 +52,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      </div>
+      
 
       </div>
 
