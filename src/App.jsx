@@ -4,14 +4,13 @@ import HomePage from "./pages/HomePage"
 import Contact from "./pages/Contact"
 import { Routes, Route } from "react-router-dom"
 import "./App.css";
-import FooterComponent from "./components/FooterComponent"
 
 
 const App = () => {
   return (
 
     
-    <div className=" lh-base bg-dark text-white "  >
+    <div className="lh-base bg-dark text-white "  >
 
 
       <NavbarComponent/>
@@ -23,7 +22,6 @@ const App = () => {
         
       </Routes>
 
-      <FooterComponent/>
 
     </div>
   )

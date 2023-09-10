@@ -8,7 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     /* padding-top: 0vh; */
-    padding-bottom: 35vh;
+    padding-bottom: 30vh;
   }
   
   .techSkills {
@@ -60,4 +60,8 @@
     .skillName {
       font-size: 1.2vh; /* Adjust the font size for smaller screens */
     }
+  }
+
+  body {
+    background-color: black;
   }
